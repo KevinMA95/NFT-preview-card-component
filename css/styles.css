@@ -1,0 +1,138 @@
+:root {
+    --color-txt: hsl(215, 51%, 70%);
+    --color-txt-eth: hsl(178, 100%, 50%);
+    --color-txt-head: hsl(0, 0%, 100%);
+    
+    --color-mainBG: hsl(217, 54%, 11%);
+    --color-cardBG: hsl(216, 50%, 16%);
+    --color-bottomBorder: hsl(215, 32%, 27%);
+
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-mainBG);
+    font-size: 18px;
+    
+}
+
+.main-container {
+    margin: 3%;
+    background-color: var(--color-cardBG);
+    padding: 3%;
+    max-width: 325px;
+    border-radius: 2%;
+    max-height: 520px;
+    
+}
+
+.img-hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding: 2%;
+    
+}
+
+.img-hero-container > img {
+    position: relative;
+    width: 100%;
+    height:100%;
+    border-radius: 2%;
+    align-self: center;
+    
+}
+
+.img-hero-container-active{
+    position: absolute;
+    width: 97%;
+    height: 97%;
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    opacity: 0;
+    background-color: var(--color-txt-eth);
+    
+}
+
+.info-container{
+    padding: 3%;
+    font-size: 0.8rem;
+    
+}
+
+.light {
+    color: var(--color-txt-head);
+}
+
+.soft{
+    color: var(--color-txt);
+}
+
+.cyan {
+    color: var(--color-txt-eth);
+}
+
+.details-container {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid var(--color-bottomBorder);
+    padding-bottom: 3%;
+    
+}
+
+.info-time-container{
+    margin-left: auto;
+}
+
+.footer-container {  
+    display: flex;
+    flex-direction: row;
+    margin: 2%;
+}
+
+
+.footer-container > img {
+    width: 10%;
+    height: 10%;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    
+}
+
+
+.footer-container-credits {
+    font-size: 0.8rem;
+    margin: 3%;
+    
+}
+
+.light:hover {
+    color: var(--color-txt-eth);
+    cursor: pointer;
+}
+
+.img-hero-container-active:hover{
+    opacity: 0.5;
+}
+
+@media screen and (min-width:400px){
+
+    .main-container{
+        margin: auto;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+}
+
+
+
+
